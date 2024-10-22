@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.cabecalho_img {
+    background-color: rgb(202, 167, 199);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+nav{
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+main{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 251, 255, 0.541);
+}
+.main_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+#conf_foto{
+    width: 580px;
+    height: 700px;
+    border-radius: 20px;
+}
+footer{
+    background-color: rgb(202, 167, 199);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icones_redes{
+    padding: 20px;
+}
+#icone_rede{
+    width: 50px;
+    height: 50px;
+}
