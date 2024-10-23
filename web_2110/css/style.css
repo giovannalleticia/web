@@ -2,13 +2,32 @@
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@font-face {
+    font-family:  'Dancing Script';
+    src: url(./fontes/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url(./fontes/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: 'Arima Medium';
+    src: url(./fontes/Arima-Medium.ttf);
+}
 
-.cabecalho_img {
+.cabecalho {
     background-color: rgb(202, 167, 199);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
+    border-bottom: 2px solid rgb(160, 124, 146);
+}
+#nome{
+    font-size: 30px;
+    color:rgb(121, 55, 25);
+    font-family: 'Dancing Script';
+    font-weight: bold;
 }
 
 #logo{
@@ -20,7 +39,10 @@ nav{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
+    font-family: 'Lobster';
+    font-size: 18px;
+    border-bottom: 2px solid rgb(160, 124, 146);
+    color:rgb(121, 55, 25);
 }
 main{
     padding: 40px;
@@ -30,33 +52,52 @@ main{
 }
 .main_description{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
     font-size: 40px;
+    font-family: 'Lobster';
+    padding: 30px 200px;
+    color:rgb(121, 55, 25);
+}
+#descricao{
+    text-align: justify;
+    padding: 0px 200px;
+    font-family: 'Arima Medium';
+    font-weight: 500;
+    color:rgb(121, 55, 25);
+
+}
+.main_img{
+    padding: 10px 130px
 }
 #conf_foto{
-    width: 580px;
-    height: 700px;
+    width: 680px;
+    height: 800px;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(121, 55, 25);
 }
 footer{
     background-color: rgb(202, 167, 199);
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 15px;
     align-items: center;
+    border-top: 2px solid rgb(160, 124, 146);
 }
 .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
+    padding-bottom: 20px;
+    font-weight: 500;
 }
 
-.icones_redes{
-    padding: 20px;
-}
 #icone_rede{
     width: 50px;
     height: 50px;
