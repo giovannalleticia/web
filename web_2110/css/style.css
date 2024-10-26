@@ -15,14 +15,27 @@
     src: url(./fontes/Arima-Medium.ttf);
 }
 
+body{
+    flex-direction: column;
+    display: flex;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
 .cabecalho {
     background-color: rgb(202, 167, 199);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
     border-bottom: 2px solid rgb(160, 124, 146);
+    flex-basis: 100%;
+    padding: 10px 0px;
+
 }
+
 #nome{
     font-size: 30px;
     color:rgb(121, 55, 25);
@@ -34,6 +47,7 @@
     width: 100px;
     height: 100px;
 }
+
 nav{
     background-color: beige;
     padding: 20px;
@@ -43,45 +57,63 @@ nav{
     font-size: 18px;
     border-bottom: 2px solid rgb(160, 124, 146);
     color:rgb(121, 55, 25);
+    flex-basis: 100%;
 }
+
 main{
-    padding: 40px;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     background-color: rgba(255, 251, 255, 0.541);
+    flex-wrap: wrap;
+    height: 1000px;
 }
+
 .main_description{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 25%;
 }
+
 #titulo{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     font-family: 'Lobster';
-    padding: 30px 200px;
+    padding: 30px 10px 10px 10px;
     color:rgb(121, 55, 25);
+    padding-bottom: 10px;
 }
+
 #descricao{
     text-align: justify;
-    padding: 0px 200px;
     font-family: 'Arima Medium';
     font-weight: 500;
+    padding: 10px 150px;
     color:rgb(121, 55, 25);
+}
 
-}
 .main_img{
-    padding: 10px 130px
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
 }
+
 #conf_foto{
-    width: 680px;
-    height: 800px;
+    height: 650px;
+    width: 500px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(121, 55, 25);
 }
+
 footer{
     background-color: rgb(202, 167, 199);
     display: flex;
@@ -90,15 +122,40 @@ footer{
     align-items: center;
     border-top: 2px solid rgb(160, 124, 146);
 }
+
 .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 10px 0px;
     font-weight: 500;
+    flex-basis: 100%;
 }
 
 #icone_rede{
     width: 50px;
     height: 50px;
 }
+
+@media only screen and (max-width: 500px) {
+
+    .cabecalho{
+        flex-direction: column;
+
+    }
+    #descricao{
+        padding: 20px 10px;
+    }
+
+    #conf_foto{
+        height: 400px;
+        width: 300px;
+    }
+
+    main{
+        height: 1000px;
+        padding: 10pxpx;
+
+    }
+}
+    
