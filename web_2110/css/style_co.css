@@ -58,7 +58,6 @@ nav{
     color:rgb(121, 55, 25);
     flex-basis: 100%;
 }
-
 a{
     text-decoration: none;
 }
@@ -67,7 +66,7 @@ main{
     padding: 10px;
     background-color: rgba(255, 251, 255, 0.541);
     flex-wrap: wrap;
-    height: 800px;
+    height: 700px;
     display: flex;
 }
 
