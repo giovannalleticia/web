@@ -1,7 +1,7 @@
 *{
     margin: 0;
 }
-
+ 
 @font-face {
     font-family:  'Dancing Script';
     src: url(./fontes/DancingScript-VariableFont_wght.ttf);
@@ -14,12 +14,12 @@
     font-family: 'Arima Medium';
     src: url(./fontes/Arima-Medium.ttf);
 }
-
+ 
 body{
     flex-direction: column;
     display: flex;
 }
-
+ 
 header{
     display: flex;
     flex-direction: column;
@@ -33,21 +33,20 @@ header{
     border-bottom: 2px solid rgb(160, 124, 146);
     flex-basis: 100%;
     padding: 10px 0px;
-
+ 
 }
-
+ 
 #nome{
     font-size: 30px;
     color:rgb(121, 55, 25);
     font-family: 'Dancing Script';
     font-weight: bold;
 }
-
+ 
 #logo{
     width: 100px;
     height: 100px;
 }
-
 nav{
     background-color: beige;
     padding: 20px;
@@ -60,60 +59,64 @@ nav{
     flex-basis: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+ 
 main{
     padding: 10px;
-    display: flex;
-    flex-direction: row;
     background-color: rgba(255, 251, 255, 0.541);
     flex-wrap: wrap;
-    height: 1000px;
+    height: 800px;
+    display: flex;
 }
 
-.main_description{
+.form{
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: 25%;
+    flex-shrink: 1;
 }
-
-#titulo{
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 510px;
+    height: 480px;
+    padding: 0px 30px;
+}
+legend{
+    font-size: 25px;
+    font-weight: 700;
+}
+label{
+    font-size: 17px;
+}
+#telefone, #fnome, #email {
+    width: 500px;
+    height: 25px;
+}
+#mensagem{
+    width: 502px;
+    height: 100px;
+}
+button{
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-family: 'Lobster';
-    padding: 30px 10px 10px 10px;
-    color:rgb(121, 55, 25);
-    padding-bottom: 10px;
+    height: 23px;
+    width: 508px;
+    font-weight: 600;
 }
-
-#descricao{
-    text-align: justify;
-    font-family: 'Arima Medium';
-    font-weight: 500;
-    padding: 10px 150px;
-    color:rgb(121, 55, 25);
-}
-
-.main_img{
+.mapa{
+    display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 25%;
+    flex-basis: 50%
 }
-
-#conf_foto{
-    height: 650px;
-    width: 500px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px rgb(121, 55, 25);
-}
-
+ 
 footer{
     background-color: rgb(202, 167, 199);
     display: flex;
@@ -122,7 +125,7 @@ footer{
     align-items: center;
     border-top: 2px solid rgb(160, 124, 146);
 }
-
+ 
 .contato{
     display: flex;
     flex-direction: column;
@@ -131,31 +134,33 @@ footer{
     font-weight: 500;
     flex-basis: 100%;
 }
-
+ 
 #icone_rede{
     width: 50px;
     height: 50px;
 }
-
+ 
 @media only screen and (max-width: 500px) {
-
+ 
     .cabecalho{
         flex-direction: column;
-
     }
-    #descricao{
-        padding: 20px 10px;
-    }
-
-    #conf_foto{
-        height: 400px;
-        width: 300px;
-    }
-
+ 
     main{
         height: 1000px;
         padding: 10pxpx;
-
     }
+    fieldset{
+        width: 230px;
+    }
+    #telefone, #fnome, #email {
+        width: 220px;
+    }
+    button{
+        width: 227px;
+    }
+    #mensagem{
+        width: 222px;
+    }
+
 }
-    
