@@ -33,3 +33,9 @@ color: blue;
         font-size: 4em;
     }
 }
+
+@media (orientation: landscape){
+    h1{
+        color: brown;
+    }
+}
