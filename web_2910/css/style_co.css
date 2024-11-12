@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(./fontes/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url(./fontes/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'Arima Medium';
+    src: url(./fontes/Arima-Medium.ttf);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cabecalho {
+    background-color: rgb(202, 167, 199);
+    display: grid;
+    place-items: center;
+    border-bottom: 2px solid rgb(160, 124, 146);
+    padding: 10px 0;
+}
+
+#nome {
+    font-size: 30px;
+    color: rgb(121, 55, 25);
+    font-family: 'Dancing Script';
+    font-weight: bold;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: beige;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    font-family: 'Lobster';
+    font-size: 18px;
+    border-bottom: 2px solid rgb(160, 124, 146);
+    color: rgb(121, 55, 25);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(121, 55, 25);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 251, 255, 0.541);
+    height: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    width: 100%;
+    max-width: 510px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+legend {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 17px;
+}
+
+#telefone, #fnome, #email, #mensagem {
+    width: 100%;
+}
+
+#telefone, #fnome, #email {
+    height: 30px;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+button {
+    display: grid;
+    justify-items: center;
+    height: 40px;
+    width: 100%;
+    font-weight: 600;
+    background-color: rgb(121, 55, 25);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(160, 124, 146);
+}
+
+.mapa {
+    display: grid;
+    align-items: start;
+}
+
+footer {
+    background-color: rgb(202, 167, 199);
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    border-top: 2px solid rgb(160, 124, 146);
+}
+
+.contato {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+#icone_rede {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Uma coluna para telas menores */
+    }
+
+    nav {
+        grid-template-columns: 1fr; /* Itens do menu em uma coluna */
+        padding: 15px;
+    }
+
+    .cabecalho {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset {
+        width: 100%;
+        max-width: 400px; /* Reduzir a largura para dispositivos móveis */
+    }
+
+    #telefone, #fnome, #email {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #mensagem {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cabecalho {
+        grid-template-columns: 1fr; /* Empilhando logo e nome */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    fieldset {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #telefone, #fnome, #email {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #mensagem {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+    h1{
+color: blue;
+    }
+}
+
+@media print{
+    h1 {
+        color: green;
+    }
+}
+
+/*todos os modos*/
+@media (max-width: 700px){
+    h1{
+        color: purple
+    }
+}
+
+/*mobile first*/
+@media (min-width: 200px){
+    h1{
+        color: black;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px){
+    h1{
+        font-size: 4em;
+    }
+}
