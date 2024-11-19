@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História - Borcelle Confeitaria</title>
-    <link rel="stylesheet" href="css/style_hi.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
@@ -12,13 +13,15 @@
             <img id="logo" src="img/logo.webp" alt="logo confeitaria">
             <p id="nome">Borcelle Confeitaria</p>
         </section>
-        <nav>
-           <a href="home.html"><p>Home</p></a>
-           <a href="historia.html"><p>História</p></a>
+    </header>
+        <span id="botao-menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+           <a href="home.htm<p>l">Home</p></a>
+           <a href="historia.html"><p></p>História</p></a>
            <a href="galeria.html"><p>Galeria</p></a>
            <a href="contato.html"><p>Contato</p></a>
         </nav>
-    </header>
+ 
     <main>
         </section>
         <section class="main_description">
@@ -27,8 +30,7 @@
             <p id="descricao">Nos primeiros dias, Borcelle era apenas uma ideia em minha mente e algumas receitas rabiscadas em cadernos antigos. Mas sabia que poderia ser mais: um lugar onde as pessoas pudessem não apenas provar, mas sentir. Assim, escolhi cuidadosamente os ingredientes e refinei cada detalhe para trazer autenticidade em cada mordida. Os bolos e doces não seriam apenas sobremesas, mas criações feitas com paixão e dedicação.</p>
             <p id="descricao">Lembro-me de quando inauguramos, o aroma doce tomou conta do espaço e, junto dele, o nervosismo e a expectativa. Ver os primeiros clientes entrando, admirando as vitrines repletas de doces delicadamente decorados, foi um momento que jamais esquecerei. E quando os elogios começaram a chegar, percebi que Borcelle estava cumprindo seu propósito: criar memórias doces.</p>
             <p id="descricao">Com o tempo, a confeitaria começou a ganhar identidade própria. Cada bolo personalizado era um reflexo das comemorações de nossos clientes, e cada doce individual, um mimo especial para momentos do dia a dia. Sempre busquei entender o que cada cliente desejava, para entregar mais do que um produto: uma experiência única.</p>
-            <p id="descricao">Hoje, a Borcelle Confeitaria é muito mais do que um sonho realizado. É um espaço onde a criatividade e a técnica se encontram, e onde cada detalhe, desde o sabor até a decoração, é pensado para transformar um simples doce em uma lembrança inesquecível.</p>
-            <p id="descricao">E é assim que vejo a Borcelle: uma confeitaria que não é apenas minha, mas de todos que cruzam nossas portas e encontram em cada fatia um pedacinho de felicidade.</p>
+            <p id="descricao">Hoje, a Borcelle Confeitaria é muito mais do que um sonho realizado. É um espaço onde a criatividade e a técnica se encontram, e onde cada detalhe, desde o sabor até a decoração, é pensado para transformar um simples doce em uma lembrança inesquecível. E é assim que vejo a Borcelle: uma confeitaria que não é apenas minha, mas de todos que cruzam nossas portas e encontram em cada fatia um pedacinho de felicidade.</p>
         </section>
     </main>
     <footer>
@@ -45,5 +47,16 @@
             <a href="www.facebook.com/"><img id="icone_rede" src="./img/facebook.png" alt="logo facebook"></a>
         </section>
     </footer>
+    <script>
+        function clickMenu() {
+            var itens = document.getElementById('itens'); // Ensure you're selecting the correct element
+
+            if (itens.style.display === 'block'){
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
