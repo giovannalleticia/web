@@ -117,16 +117,6 @@ main .galeria{
     padding-bottom: 10px;
 }
 
-#titulo-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-family: 'Lobster';
-    padding: 30px 10px 10px 10px;
-    color:rgb(121, 55, 25);
-    padding-bottom: 10px;
-}
 
 #descricao{
     text-align: justify;
@@ -314,6 +304,5 @@ footer{
 
     .mapa{
         width: 300px;
-        height: auto;
     }
 }
