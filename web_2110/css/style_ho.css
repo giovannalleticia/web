@@ -84,7 +84,7 @@ main{
     flex-basis: 25%;
 }
 
-#titulo{
+#titulo-main{
     display: flex;
     justify-content: center;
     align-items: center;

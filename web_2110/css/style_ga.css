@@ -70,10 +70,10 @@ main{
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 251, 255, 0.541);
-    height: 1500px;
+    height: auto;
 }
 
-.main_description{
+.main-fotos{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
