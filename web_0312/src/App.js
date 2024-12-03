@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Menu from '/Menu';
-import Home from '/Home';
-import Sobre from '/Sobre';
+import Menu from './Home';
+import Home from './Menu';
+import Sobre from './Sobre';
 
 function App() {
   return (

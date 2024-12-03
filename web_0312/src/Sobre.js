@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Sobre() {
-    returnn (
+    return (
         <div>
             <h1>Esta é a página Sobre</h1>
             <p>Informações sobre a aplicação</p>
